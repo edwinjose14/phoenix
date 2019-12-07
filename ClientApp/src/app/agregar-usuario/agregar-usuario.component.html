@@ -1,0 +1,83 @@
+<section class="content">
+    <h2>Agregar Usuarios</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div class="form-group">
+                        <Label><b>Identificacion:</b></Label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.identificacion" class="form-control"
+                            placeholder="Ingrese Identificacion">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Apellido:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.apellidos" class="form-control" placeholder="Ingrese Apellido">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Nombre:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.nombres" class="form-control" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="form-group">
+                        <Label><b>Edad</b></Label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.edad" type="number" min="1" max="100" class="form-control"
+                            placeholder="Ingrese Edad">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label><b>Sexo:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <select [(ngModel)]="usuario.sexo" name="" class="form-control" id="sel1">
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Direccion:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.direccion" class="form-control" placeholder="Ingrese Direccion">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Cargo:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.cargo" class="form-control" placeholder="Ingrese Cargo">
+                    </div>
+                    <div>
+                        <label><b>Telefono:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="usuario.telefono" class="form-control" placeholder="Ingrese Telefono">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tablaBotones">
+        <table>
+            <tr>
+                <td>
+                    <button (click)="add()" class="btn btn-primary">Registrar</button>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <button class="btn btn-danger">Cancelar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>

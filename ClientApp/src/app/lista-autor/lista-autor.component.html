@@ -1,0 +1,30 @@
+ 
+<div>
+  <h1 class="h1"> Lista de Autores</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Nacionalidad</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let autor of autors">
+      <td>{{autor.id}}</td>
+      <td>{{autor.nombre}}</td>
+      <td>{{autor.nacionalidad}}</td>
+      <td><a routerLink="/editarAutor/{{autor.id}}"> ver</a>
+      </td>
+    </tr>
+  </table>
+
+</div>
+<div>
+    <div class="form-group">
+        <select name="" class="form-control" id="sel1">
+            <option  *ngFor="let item of autors">{{item.id}}</option>
+        </select>
+    </div>
+</div>

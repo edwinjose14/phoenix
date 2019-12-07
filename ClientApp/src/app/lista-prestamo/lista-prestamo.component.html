@@ -1,0 +1,34 @@
+ 
+<div>
+  <h1 class="h1"> Lista de Prestamos</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Id</th>
+        <th>IdUsuario</th>
+        <th>CodLibro</th>
+        <th>FechaSalida</th>
+        <th>Estado</th>
+
+
+      </tr>
+    </thead>
+    <tr *ngFor="let prestamo of prestamos">
+      <td>{{prestamo.id}}</td>
+      <td>{{prestamo.idUsuario}}</td>
+      <td>{{prestamo.codLibro}}</td>
+      <td>{{prestamo.fechaSalida}}</td>
+      <td>{{prestamo.estado}}</td>
+
+      <td><a routerLink="#">
+          ver
+        </a>
+      </td>
+
+    </tr>
+  </table>
+  <!-- <img src="assets/GestionTI.jpg" height="80px" width="80px" x="840" y="90"  > -->
+
+</div>

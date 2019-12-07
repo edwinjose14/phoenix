@@ -1,0 +1,37 @@
+<section class="content">
+  <h2>Agregar Autor</h2>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="box box-primary">
+              <div class="box-body">
+                  <div >
+                      <label><b>Nombre:</b></label>
+                  </div>
+                  <div class="form-group">
+                      <input [(ngModel)]="autor.nombre" class="form-control" placeholder="Ingrese Nombre">
+                  </div>
+                  <div >
+                      <label><b>Nacionalidad:</b></label>
+                  </div>
+                  <div class="form-group">
+                      <input [(ngModel)]="autor.nacionalidad" class="form-control" placeholder="Ingrese Nacionalidad">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="tablaBotones">
+      <table>
+          <tr>
+              <td>
+                  <button (click)="add()" class="btn btn-primary">Registrar</button>
+              </td>
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              <td>
+                  <button class="btn btn-danger">Cancelar</button>
+              </td>
+          </tr>
+      </table>
+  </div>
+</section>

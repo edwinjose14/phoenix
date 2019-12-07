@@ -1,0 +1,37 @@
+<section class="content">
+  <h2>Agregar Copias</h2>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="box box-primary">
+              <div class="box-body">
+                  <div class="form-group">
+                      <Label><b>Id Libro:</b></Label>
+                  </div>
+                  <div class="form-group">
+                      <input [(ngModel)]="copias.codLibro" class="form-control" placeholder="Ingrese Id Libro">
+                  </div>
+                  <div class="form-group">
+                      <label><b>Copias Disponibles:</b></label>
+                  </div>
+                  <div class="form-group">
+                      <input [(ngModel)]="copias.copiasDisponibles" class="form-control" placeholder="N° de Copias">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="tablaBotones">
+    <table>
+        <tr>
+            <td>
+                <button (click)="Add()" class="btn btn-primary">Registrar</button>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <button class="btn btn-danger">Cancelar</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</section>

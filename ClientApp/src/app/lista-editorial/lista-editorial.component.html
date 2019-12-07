@@ -1,0 +1,29 @@
+ 
+<div>
+  <h1 class="h1"> Lista de Editorial</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Pais</th>
+
+
+      </tr>
+    </thead>
+    <tr *ngFor="let editorial of editorials">
+      <td>{{editorial.id}}</td>
+      <td>{{editorial.nombre}}</td>
+      <td>{{editorial.pais}}</td>
+      <td><a routerLink="#">
+          ver
+        </a>
+      </td>
+
+    </tr>
+  </table>
+  <!-- <img src="assets/GestionTI.jpg" height="80px" width="80px" x="840" y="90"  > -->
+
+</div>

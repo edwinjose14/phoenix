@@ -1,0 +1,39 @@
+ 
+<div>
+  <h1 class="h1"> Lista de Usuarios</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Identificacion</th>
+        <th>Apellidos</th>
+        <th>Nombres</th>
+        <th>Edad</th>
+        <th>Sexo</th>
+        <th>Direccion</th>
+        <th>Cargo</th>
+        <th>Telefono</th>
+
+
+      </tr>
+    </thead>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{usuario.identificacion}}</td>
+      <td>{{usuario.apellidos}}</td>
+      <td>{{usuario.nombres}}</td>
+      <td>{{usuario.edad}}</td>
+      <td>{{usuario.sexo}}</td>
+      <td>{{usuario.direccion}}</td>
+      <td>{{usuario.cargo}}</td>
+      <td>{{usuario.telefono}}</td>
+      <td><a routerLink="#">
+          ver
+        </a>
+      </td>
+
+    </tr>
+  </table>
+  <!-- <img src="assets/GestionTI.jpg" height="80px" width="80px" x="840" y="90"  > -->
+
+</div>
